@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ElectroShop
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.3.0.
@@ -61,3 +62,6 @@ For more information on using the Angular CLI, including detailed command refere
 =======
 # Angular
 >>>>>>> 24cb71067b851e36826ebce7908b6d06f402aa58
+=======
+# Angular-Task
+>>>>>>> d5d1419f08d00e9f519a128cd4c7d3317ed5165a
