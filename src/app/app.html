@@ -1,0 +1,55 @@
+<header>
+  <h1>{{ storeName }}</h1>
+  <p>{{ storeDescription }}</p>
+
+  <h2>{{ storeStatus }}</h2>
+</header>
+
+<section>
+  <h2>Featured Product</h2>
+  <h3>{{ featuredProduct.name }}</h3>
+  <p>{{ featuredProduct.description }}</p>
+  <p>
+    Original price: ${{ featuredProduct.price }} | Final price: ${{ finalPrice }} |
+    {{ discountPercentage }}% Discount
+  </p>
+</section>
+
+<section>
+  <h2>Our Products</h2>
+  <table>
+    <tr>
+      @for (name of productNames; track name) {
+        <th>{{ name }}</th>
+      }
+    </tr>
+
+    <tr>
+      @for (price of productPrices; track $index) {
+        <td>${{ price }}</td>
+      }
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Store Summary</h2>
+
+  <table class="summary">
+    <tr>
+      <td>{{ summaryTotalProducts }}</td>
+      <td>${{ highestPrice }}</td>
+      <td>${{ lowestPrice }}</td>
+      <td>${{ totalValue }}</td>
+    </tr>
+
+    <tr>
+      <th>Total Products</th>
+      <th>Highest Price</th>
+      <th>Lowest Price</th>
+      <th>Total Products Value</th>
+    </tr>
+  </table>
+</section>
+
+
